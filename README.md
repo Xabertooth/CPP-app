@@ -1,2 +1,1 @@
-Reading book Bjarne Stroustrup \n
-watch, read, study
+Reading book Bjarne Stroustrup
