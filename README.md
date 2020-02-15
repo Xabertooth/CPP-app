@@ -1,2 +1,1 @@
-# Study-of-the-book-by-B.Straustrup
-training repository
+reading book Bjarne Stroustrup
