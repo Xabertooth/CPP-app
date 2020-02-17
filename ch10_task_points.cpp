@@ -1,3 +1,4 @@
+// Ð—Ð°Ð´Ð°Ð½Ð¸Ðµ Ð¸Ð· Ð³Ð»Ð°Ð²Ñ‹ 10
 #include "std_lib_facilities.h"
 #include <fstream>
 
@@ -16,15 +17,15 @@ void print_point(Point p){
 }
 
 void out_to_file(string oname){
-	cout << "Èìÿ ôàéëà äëÿ çàïèñè: " << oname << '\n';
+	cout << "ÃˆÃ¬Ã¿ Ã´Ã Ã©Ã«Ã  Ã¤Ã«Ã¿ Ã§Ã Ã¯Ã¨Ã±Ã¨: " << oname << '\n';
 	ofstream ost{oname};
-	if(!ost) error("Íåâîçìîæíî îòêðûòü âûõîäíîé ôàéë!");
+	if(!ost) error("ÃÃ¥Ã¢Ã®Ã§Ã¬Ã®Ã¦Ã­Ã® Ã®Ã²ÃªÃ°Ã»Ã²Ã¼ Ã¢Ã»ÃµÃ®Ã¤Ã­Ã®Ã© Ã´Ã Ã©Ã«!");
 	
-	cout << "Ââåäèòå ñåìü ïàð çíà÷åíèé x, y!" << '\n';
+	cout << "Ã‚Ã¢Ã¥Ã¤Ã¨Ã²Ã¥ Ã±Ã¥Ã¬Ã¼ Ã¯Ã Ã° Ã§Ã­Ã Ã·Ã¥Ã­Ã¨Ã© x, y!" << '\n';
 	Point pnt;
 	vector<Point> original_points(0);
 	for (int i = 0; i<6; ++i){
-		cout << "Ïàðà çíà÷åíèé " << i+1 << ':' << '\t';
+		cout << "ÃÃ Ã°Ã  Ã§Ã­Ã Ã·Ã¥Ã­Ã¨Ã© " << i+1 << ':' << '\t';
 		cin >> pnt;
 		original_points.push_back(pnt);
 	}
@@ -37,9 +38,9 @@ void out_to_file(string oname){
 }
 
 void in_from_file(string iname){
-	cout << "Èìÿ ôàéëà äëÿ ÷òåíèÿ: " << iname << '\n';
+	cout << "ÃˆÃ¬Ã¿ Ã´Ã Ã©Ã«Ã  Ã¤Ã«Ã¿ Ã·Ã²Ã¥Ã­Ã¨Ã¿: " << iname << '\n';
 	ifstream ist{iname};
-	if(!ist) error("Íåâîçìîæíî îòêðûòü âõîäíîé ôàéë!");
+	if(!ist) error("ÃÃ¥Ã¢Ã®Ã§Ã¬Ã®Ã¦Ã­Ã® Ã®Ã²ÃªÃ°Ã»Ã²Ã¼ Ã¢ÃµÃ®Ã¤Ã­Ã®Ã© Ã´Ã Ã©Ã«!");
 	
 	vector<Point>processed_points(0);
 	
